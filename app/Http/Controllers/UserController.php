@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+// use App\Models\User;
+
+// use App\Exceptions\UserNotFoundException;
 
 class UserController extends Controller
 {
@@ -11,6 +13,13 @@ class UserController extends Controller
     {
         return view('create_user');
     }
+
+    // public function read($id)
+    // {
+    //     $userdata = User::find($id);
+        
+        
+    // }
 
     public function store(Request $request)
     {

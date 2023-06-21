@@ -19,5 +19,8 @@ Route::get('/', function () {
 
 Route::get('users', [App\Http\Controllers\UserController::class,'create']);
 Route::post('users/store', [App\Http\Controllers\UserController::class,'store']);
+Route::get('users/read/{id}',[App\Http\Controllers\UserController::class, 'read']);
+Route::get('error',[App\Http\Controllers\errorController::class, 'show'])->name('error');
+
 
 
